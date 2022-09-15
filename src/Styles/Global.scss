@@ -1,0 +1,14 @@
+@use './Partials/Mixins.scss' as *;
+@use './Partials/Utilities.scss' as *;
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  Link,
+a {
+  text-decoration: none;
+}
