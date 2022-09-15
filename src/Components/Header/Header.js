@@ -1,10 +1,22 @@
+import "./Header.scss"
+import { Link } from "react-router-dom";
 
 
 function Header() {
     return (
-     <>
-      <h1>This is the Header</h1>
-     </>
+      <div className="header">
+        <div className="logo">
+         <Link to='/' className="link">
+          <p className="logo__1">FLICK</p>
+          <p className="logo__2">FINDER</p>
+         </Link>
+        </div>
+        <div className="contact">
+         <Link to='/contact' className="link">
+          <p className="contact-text">CONTACT</p>
+         </Link>
+        </div>
+     </div>
     );
   }
   

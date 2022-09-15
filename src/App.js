@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route></Route>
+        <Route path='/' />
+        <Route path='/contact' />
       </Routes>
     </BrowserRouter>
    </>
