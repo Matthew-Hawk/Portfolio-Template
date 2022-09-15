@@ -13,7 +13,7 @@ function Header() {
         </div>
         <div className="contact">
          <Link to='/contact' className="header__link">
-          <p className="contact-text">CONTACT</p>
+          <p className="contact__text">CONTACT</p>
          </Link>
         </div>
      </div>
