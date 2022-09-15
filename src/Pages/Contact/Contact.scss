@@ -19,6 +19,9 @@
         border-radius: 2rem;
         filter: drop-shadow(0 0 0.10rem white);
     }
+    &.active{
+        filter: drop-shadow(0 0 0.10rem white);
+    }
     &__tag{
         text-align: center;
         font-size: 6rem;
