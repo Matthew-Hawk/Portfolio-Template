@@ -1,0 +1,33 @@
+@use '../../Styles/Global.scss' as *;
+@use '../../Styles/Partials/Mixins.scss' as *;
+@use '../../Styles/Partials/Utilities.scss' as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+.link-div{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    width: 100%;
+    &:hover{
+        // background-color: green;
+        border-radius: 2rem;
+        filter: drop-shadow(0 0 0.10rem white);
+    }
+    &__tag{
+        text-align: center;
+        font-size: 6rem;
+        color: white;
+        padding: .5rem;
+        // &:hover{
+        //     // background-color: green;
+        //     border-radius: 2rem;
+        //     filter: drop-shadow(0 0 0.10rem white);
+        // }
+    }
+}
