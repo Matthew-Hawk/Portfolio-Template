@@ -4,9 +4,12 @@
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 8rem;
+    @include desktop{
+        justify-content: flex-start;
+    }
     &__link{
         &.active{
             filter: drop-shadow(0 0 0.10rem white);
@@ -16,33 +19,36 @@
 .logo{
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
     font-size: 3rem;
-    margin-left: 2rem;
+    margin: .5rem;
+    @include tablet {
+        font-size: 4rem;
+    }
+    @include desktop {
+        font-size: 6rem;
+    }
 
     &__1{
+        text-align: center;
         color: white;
-    }
-    &__2{
-        color: white;
-        margin-left: 3rem;
     }
 }
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    font-size: 3rem;
-    margin-right: 5rem;
-    &:hover{
-        // background-color: green;
-        border-radius: 2rem;
-        filter: drop-shadow(0 0 0.10rem white);
-    }
+// .contact{
+//     display: flex;
+//     flex-direction: column;
+//     align-self: center;
+//     font-size: 3rem;
+//     margin-right: 5rem;
+//     &:hover{
+//         // background-color: green;
+//         border-radius: 2rem;
+//         filter: drop-shadow(0 0 0.10rem white);
+//     }
     
-    &__text{
-        color: white; 
-        padding: .5rem;
-    }
-}
+//     &__text{
+//         color: white; 
+//         padding: .5rem;
+//     }
+// }
 
