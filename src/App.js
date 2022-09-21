@@ -4,9 +4,9 @@ import './App.scss'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './Components/Header/Header'
-import Contact from './Pages/Contact/Contact'
 import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
+import Shaun from './Pages/Shaun of the dead/Shaun'
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
     <Header />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/shaunofthedead' element={<Shaun />} />
+
       </Routes>
     </BrowserRouter>
     <Footer />
