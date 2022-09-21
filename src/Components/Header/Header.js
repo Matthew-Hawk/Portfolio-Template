@@ -10,11 +10,6 @@ function Header() {
           <p className="title__name">Edgar Wright</p>
          </NavLink>
         </div>
-        {/* <div className="contact">
-         <NavLink to='/contact' className="header__link">
-          <navl className="contact__text">CONTACT</navl>
-         </NavLink>
-        </div> */}
      </div>
     );
   }
