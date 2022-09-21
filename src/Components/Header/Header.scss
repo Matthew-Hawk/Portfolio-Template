@@ -16,7 +16,7 @@
         }
     }
 }
-.logo{
+.title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
         font-size: 6rem;
     }
 
-    &__1{
+    &__name{
         text-align: center;
         color: white;
     }
