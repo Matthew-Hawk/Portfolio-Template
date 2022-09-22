@@ -1,5 +1,5 @@
 import './Hot-Fuzz.scss'
-import Couch from '../../Assets/Photos/05-couch.png'
+import Photo from '../../Assets/Photos/Hot-Fuzz.jpg'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 
@@ -32,7 +32,7 @@ function Shaun() {
         </h1>
         <p className="home__tagline">{tagline}</p>
         <div className="content">
-            <img className="content__pic" src={Couch} />
+            <img className="content__pic" src={Photo} />
             <h2 className="content__ovT">Overview:</h2>
             <p className="content__info">{overview}</p>
         </div>

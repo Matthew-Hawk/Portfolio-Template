@@ -1,0 +1,45 @@
+@use '../../Styles/Global.scss' as *;
+@use '../../Styles/Partials/Mixins.scss' as *;
+@use '../../Styles/Partials/Utilities.scss' as *;
+
+.home{
+
+    &__title{
+        font-family: 'Montserrat';
+        font-weight: 900;
+        color:white;
+    }
+    &__tagline{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: .85rem;
+        margin: .25rem;
+        color:white;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__pic{
+        align-self: center;
+        width: 25rem;
+        border-radius: 4px;
+        margin: 1rem;
+        filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
+    }
+    &__ovT{
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+    }
+    &__info{
+        font-family: 'Montserrat';
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: center;
+        margin:.5rem 7rem;
+        color: white;
+    }
+}
