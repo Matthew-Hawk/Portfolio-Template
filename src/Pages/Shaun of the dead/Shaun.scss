@@ -8,9 +8,22 @@
         font-family: 'Montserrat';
         color:white;
     }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__pic{
-        width: 20rem;
+        align-self: center;
+        width: 25rem;
         border-radius: 4px;
-        // height: 5rem;
+        margin: 1rem;
+        filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
+    }
+    &__info{
+        text-align: center;
+        font-size: .75rem;
+        margin:.5rem 3rem;
+        color: white;
     }
 }
