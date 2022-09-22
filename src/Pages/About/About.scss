@@ -6,15 +6,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 2rem 2rem  3.5rem 2rem;
-    &__info{
-        border-radius: 10px;
-        background-color: rgba($color: #0e0e0e, $alpha: .2);
-        font-family: 'Monsterrat';
-        font-weight: 900;
-        font-size: 1.7rem;
-        padding: 1rem;
-        color: white;
-    }
+    
 }
 .photo-div{
     display: flex;
@@ -23,12 +15,44 @@
     &__pic{
         height: 35rem;
         margin: 0rem 1rem;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+        border-radius: 10px;
     }
     &__i{
         font-family: 'Monsterrat';
-        font-weight: 900;
+        font-weight: 600;
+        font-style: italic;
         font-size: 1.8rem;
         text-align: center;
         color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+    }
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    &__title{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 5rem;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+
+    }
+    &__info{
+        font-family: 'Monsterrat';
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: white;
+        border-radius: 20px;
+        background-color: rgba($color: #0e0e0e, $alpha: .2);
+        padding: 1rem;
+        // filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
     }
 }
