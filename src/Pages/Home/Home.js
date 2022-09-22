@@ -13,7 +13,9 @@ function Home() {
         <Link to='/shaun'>
         <button className='button-div__btn'>Shaun of the Dead</button>
         </Link>
+        <Link to='/hotfuzz'>
         <button className='button-div__btn'>Hot Fuzz</button>
+        </Link>
         <button className='button-div__btn'>Worlds End</button>
       </div>
     </div>
