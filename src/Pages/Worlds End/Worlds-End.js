@@ -1,5 +1,5 @@
-import './Hot-Fuzz.scss'
-import Photo from '../../Assets/Photos/Hot-Fuzz.jpg'
+import '../Hot Fuzz/Hot-Fuzz.scss'
+import Photo from '../../Assets/Photos/Worlds End.jpg'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 
