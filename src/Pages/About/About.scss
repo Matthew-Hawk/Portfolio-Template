@@ -1,0 +1,34 @@
+@use '../../Styles/Global.scss' as *;
+@use '../../Styles//Partials/Mixins.scss' as *;
+@use '../../Styles/Partials/Utilities.scss' as *;
+
+.about{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 2rem  3.5rem 2rem;
+    &__info{
+        border-radius: 10px;
+        background-color: rgba($color: #0e0e0e, $alpha: .2);
+        font-family: 'Monsterrat';
+        font-weight: 900;
+        font-size: 1.7rem;
+        padding: 1rem;
+        color: white;
+    }
+}
+.photo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__pic{
+        height: 35rem;
+        margin: 0rem 1rem;
+    }
+    &__i{
+        font-family: 'Monsterrat';
+        font-weight: 900;
+        font-size: 1.8rem;
+        text-align: center;
+        color: white;
+    }
+}
