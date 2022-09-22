@@ -2,42 +2,56 @@
 @use '../../Styles/Partials/Mixins.scss' as *;
 @use '../../Styles/Partials/Utilities.scss' as *;
 
-.home{
-
+.shaun{
+    margin: 2rem 0;
+    text-align: center;
     &__title{
         font-family: 'Montserrat';
+        font-size: 4rem;
+        font-style: italic;
         font-weight: 900;
-        color:white;
+        color: white;
+        filter: drop-shadow(5px 4px 0.4rem rgba(27, 27, 27, .4));
+
     }
     &__tagline{
         font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: .75rem;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 1.6rem;
         margin: .25rem;
-        color:white;
+        color: white;
+        filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
+
     }
 }
-.content{
+.cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
     &__pic{
         align-self: center;
-        width: 25rem;
+        width: 90%;
         border-radius: 4px;
         margin: 1rem;
         filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
     }
     &__ovT{
         font-family: 'Montserrat';
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
         color: white;
+        filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
+
     }
     &__info{
         text-align: center;
-        font-size: .8rem;
-        margin:.5rem 3rem;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 2rem;
+        margin:.5rem 6rem;
         color: white;
+        filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
+
     }
 }
