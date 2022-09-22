@@ -10,7 +10,7 @@
         font-style: italic;
         font-weight: 900;
         color: white;
-        filter: drop-shadow(5px 4px 0.4rem rgba(27, 27, 27, .4));
+        filter: drop-shadow(5px 4px 0.4rem rgba(27, 27, 27, .8));
     }
     &__tagline{
         font-family: 'Montserrat';
@@ -26,6 +26,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &__link{
+        align-self: center;
+        align-items: center;
+    }
     &__pic{
         align-self: center;
         width: 90%;

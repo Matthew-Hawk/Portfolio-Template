@@ -5,7 +5,6 @@ import {useState, useEffect} from 'react'
 
 function Shaun() {
     const[title, setTitle] = useState()
-    const[poster, setPoster] = useState()
     const[overview, setOverview] = useState()
     const[tagline, setTagline] = useState()
 
@@ -17,7 +16,6 @@ function Shaun() {
         .then((response) => {
             console.log(response.data)
             setTitle(response.data.original_title)
-            setPoster(response.data.poster_path)
             setOverview(response.data.overview)
             setTagline(response.data.tagline)
             console.log(response.data)
@@ -27,9 +25,9 @@ function Shaun() {
 
   return (
     <div className="home">
-        <h1 className="home__title">
-            {title}
-        </h1>
+        <a className='home__link'>
+        <h1 className="home__title">{title}</h1>
+        </a>
         <p className="home__tagline">{tagline}</p>
         <div className="content">
             <img className="content__pic" src={Photo} />

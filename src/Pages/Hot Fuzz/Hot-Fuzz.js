@@ -25,9 +25,9 @@ function Shaun() {
 
   return (
     <div className="home">
-        <h1 className="home__title">
-            {title}
-        </h1>
+        <a className='home__link' href='https://www.youtube.com/watch?v=ayTnvVpj9t4&ab_channel=Movieclips'>
+        <h1 className="home__title">{title}</h1>
+        </a>
         <p className="home__tagline">{tagline}</p>
         <div className="content">
             <img className="content__pic" src={Photo} />
