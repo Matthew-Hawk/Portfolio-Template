@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom'
 function Home() {
   return (
     <div className="home">
+      <iframe src="https://giphy.com/embed/H62QNi23QLLlF8Ly9i" width="280" height="280" frameBorder="" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/workingtitlefilms-simon-pegg-shaun-of-the-dead-nick-frost-H62QNi23QLLlF8Ly9i"></a></p>
       <div className='button-div'>
         <button className='button-div__btn'>About</button>
         <Link to='/shaun'>

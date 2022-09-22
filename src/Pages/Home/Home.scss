@@ -8,6 +8,7 @@
     justify-content: space-around;
     align-items:center;
     width: 100%;
+    margin: 3rem 1rem;
 }
 .button-div{
     display: flex;
@@ -17,12 +18,16 @@
     width: 100%;
 
     &__btn{
-        font-size: 2rem;
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 2.6rem;
         padding: .5rem;
         margin: .5rem;
         border: none; 
         background-color: transparent;
         color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
 
         &:hover{
             background-color: rgba($color: #454545, $alpha: .3);
