@@ -10,7 +10,7 @@ function Home() {
     <div className="home">
       <div className='button-div'>
         <button className='button-div__btn'>About</button>
-        <Link to='/shaunofthedead'>
+        <Link to='/shaun'>
         <button className='button-div__btn'>Shaun of the Dead</button>
         </Link>
         <button className='button-div__btn'>Hot Fuzz</button>
