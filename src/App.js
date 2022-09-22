@@ -8,6 +8,7 @@ import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
 import Shaun from './Pages/Shaun of the dead/Shaun'
 import Hot from './Pages/Hot Fuzz/Hot-Fuzz'
+import End from './Pages/Worlds End/Worlds-End'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/shaun' element={<Shaun />} />
         <Route path='/hotfuzz' element={<Hot />}/>
+        <Route path='/worldsend' element={<End />}/>
       </Routes>
     </BrowserRouter>
     <Footer />

@@ -11,12 +11,14 @@ function Home() {
       <div className='button-div'>
         <button className='button-div__btn'>About</button>
         <Link to='/shaun'>
-        <button className='button-div__btn'>Shaun of the Dead</button>
+          <button className='button-div__btn'>Shaun of the Dead</button>
         </Link>
         <Link to='/hotfuzz'>
-        <button className='button-div__btn'>Hot Fuzz</button>
+          <button className='button-div__btn'>Hot Fuzz</button>
         </Link>
-        <button className='button-div__btn'>Worlds End</button>
+        <Link to='/worldsend'>
+          <button className='button-div__btn'>Worlds End</button>
+        </Link>
       </div>
     </div>
   )
