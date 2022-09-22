@@ -30,10 +30,11 @@ function Shaun() {
         <h1 className="home__title">
             {title}
         </h1>
-        <p className="content__info">{tagline}</p>
+        <p className="home__tagline">{tagline}</p>
         <div className="content">
-        <img className="content__pic" src={Couch} />
-        <p className="content__info">{overview}</p>
+            <img className="content__pic" src={Couch} />
+            <h2 className="content__ovT">Overview:</h2>
+            <p className="content__info">{overview}</p>
         </div>
 
     </div>

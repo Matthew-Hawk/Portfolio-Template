@@ -6,6 +6,14 @@
 
     &__title{
         font-family: 'Montserrat';
+        font-weight: 900;
+        color:white;
+    }
+    &__tagline{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: .75rem;
+        margin: .25rem;
         color:white;
     }
 }
@@ -20,9 +28,15 @@
         margin: 1rem;
         filter: drop-shadow(5px 4px 0.4rem rgba(22, 22, 22, .8));
     }
+    &__ovT{
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+    }
     &__info{
         text-align: center;
-        font-size: .75rem;
+        font-size: .8rem;
         margin:.5rem 3rem;
         color: white;
     }
