@@ -1,14 +1,18 @@
 import '../Hot Fuzz/Hot-Fuzz.scss'
-import Photo from '../../Assets/Photos/Worlds End.jpg'
 import axios from 'axios'
-import {useState, useEffect} from 'react'
+import {motion} from 'framer-motion'
+import {useRef, useState, useEffect} from 'react'
+import Photos from '../../Assets/Worlds-End/Worlds'
 
 function Shaun() {
     const[title, setTitle] = useState()
     const[overview, setOverview] = useState()
     const[tagline, setTagline] = useState()
+    const[width, setWidth] = useState(0)
 
+    const carousel = useRef()
     const API = "http://localhost:8080/worldsend"
+    const trailer = 'https://www.youtube.com/watch?v=n__1Y-N5tQk&ab_channel=RottenTomatoesTrailers'
 
 
     useEffect(() =>{
@@ -22,19 +26,41 @@ function Shaun() {
         })
     }, [])
 
+    useEffect(() =>{
+        // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth)
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+    }, [])
+
 
   return (
-    <div className="home">
-        <a className='home__link'>
-        <h1 className="home__title">{title}</h1>
+    <div className="movie">
+        <a className="movie__link" href={trailer}>
+            <h1 className="movie__title">{title}</h1>
         </a>
-        <p className="home__tagline">{tagline}</p>
-        <div className="content">
-            <img className="content__pic" src={Photo} />
-            <h2 className="content__ovT">Overview:</h2>
-            <p className="content__info">{overview}</p>
+        <p className="movie__tagline">{tagline}</p>
+        <div className="cont">
+            <motion.div 
+                ref={carousel} 
+                whileTap={{cursor: "grabbing"}}
+                className="carousel">
+                    <motion.div
+                    drag='x'
+                    dragConstraints={{right: 0, left: -width}}
+                    className="carousel__inner">
+                        {Photos.map(pic => {
+                            return(
+                                <motion.div className="carousel__item">
+                                    <a href="https://www.youtube.com/watch?v=f9XZqB6pI5E&ab_channel=thecoolidge"> 
+                                    <img src={pic} alt='photo taken from movie' />
+                                    </a>
+                                </motion.div>
+                            )
+                        })}
+                    </motion.div>
+            </motion.div>
+            <h2 className="cont__ovT">Overview:</h2>
+            <p className="cont__info">{overview}</p>
         </div>
-
     </div>
   )
 }
