@@ -47,7 +47,7 @@ function Home() {
                         </Link>
                         </motion.div>
                       <motion.div className='carousel__poster'>
-                        <Link to='/worldsend'>
+                        <Link to='/babydriver'>
                           <img src={BabyPoster} />
                           <h2 className='arousel_title'>Baby Driver</h2>
                         </Link>

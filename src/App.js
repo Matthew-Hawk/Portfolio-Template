@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer'
 import Shaun from './Pages/Shaun of the dead/Shaun'
 import Hot from './Pages/Hot Fuzz/Hot-Fuzz'
 import End from './Pages/Worlds End/Worlds-End'
+import Baby from './Pages/Baby Driver/Baby-Driver';
 import About from './Pages/About/About';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/shaun' element={<Shaun />} />
         <Route path='/hotfuzz' element={<Hot />}/>
         <Route path='/worldsend' element={<End />}/>
+        <Route path='/babydriver' element={<Baby />}/>
       </Routes>
     </BrowserRouter>
     <Footer />

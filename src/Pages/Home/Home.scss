@@ -20,9 +20,8 @@
     &__btn{
         font-family: 'Montserrat';
         font-weight: 900;
-        font-size: 2.6rem;
+        font-size: 4rem;
         padding: .5rem;
-        margin: .5rem;
         border: none; 
         background-color: transparent;
         color: white;
@@ -38,7 +37,7 @@
 .carousel{
     cursor: grab;
     overflow: hidden;
-    // padding: 3.2rem 0;
+    padding: .5rem 1rem;
 
     &__inner{
         display: flex;
@@ -46,7 +45,8 @@
     &__poster{
         min-height: 10rem;
         min-width: 40%;
-        padding: 1rem 2rem 2.8rem 2rem;
+        padding: 0rem 0rem 2.8rem 0rem;
+        margin: 1rem 2rem 0rem 2rem;
         align-items: center
     }
     &__poster img{
