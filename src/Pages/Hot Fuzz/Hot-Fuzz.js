@@ -27,7 +27,7 @@ function Shaun() {
     }, [])
 
     useEffect(() =>{
-        console.log(caroesel.current.scrollWidth, caroesel.current.offsetWidth)
+        // console.log(caroesel.current.scrollWidth, caroesel.current.offsetWidth)
         setWidth(caroesel.current.scrollWidth - caroesel.current.offsetWidth)
     }, [])
 

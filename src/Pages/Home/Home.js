@@ -9,19 +9,22 @@ import EndPoster from '../../Assets/Movie-Posters/Worlds end poster.jpg'
 import BabyPoster from '../../Assets/Movie-Posters/Baby-Driver-Poster.jpg'
 
 function Home() {
+
     const[width, setWidth] = useState()
 
-    const caroesel = useRef()
+    const car = useRef()
 
     useEffect(() =>{
-        console.log(caroesel.current.scrollWidth, caroesel.current.offsetWidth)
-        setWidth(caroesel.current.scrollWidth - caroesel.current.offsetWidth)
+        console.log(car.current.scrollWidth, car.current.offsetWidth)
+        setWidth(car.current.scrollWidth - car.current.offsetWidth)
       }, [])
+
+
   return (
     <div className="home">
       {/* <iframe src="https://giphy.com/embed/H62QNi23QLLlF8Ly9i" width="280" height="280" frameBorder="" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/workingtitlefilms-simon-pegg-shaun-of-the-dead-nick-frost-H62QNi23QLLlF8Ly9i"></a></p> */}
       <motion.div 
-                ref={caroesel} 
+                ref={car} 
                 whileTap={{cursor: "grabbing"}}
                 className="carousel">
                     <motion.div

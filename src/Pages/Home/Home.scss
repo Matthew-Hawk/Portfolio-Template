@@ -37,7 +37,7 @@
 .carousel{
     cursor: grab;
     overflow: hidden;
-    padding: .5rem 1rem;
+    // padding: .5rem 1rem;
 
     &__inner{
         display: flex;
@@ -45,8 +45,9 @@
     &__poster{
         min-height: 10rem;
         min-width: 40%;
-        padding: 0rem 0rem 2.8rem 0rem;
-        margin: 1rem 2rem 0rem 2rem;
+        padding: 1rem 1rem 2.8rem 1rem;
+        // padding: 0rem 0rem 2.8rem 0rem;
+        // margin: 1rem .5rem 0rem .5rem;
         align-items: center
     }
     &__poster img{
