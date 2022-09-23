@@ -3,7 +3,10 @@ import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import {useRef, useEffect, useState} from 'react'
 import Posters from '../../Assets/Movie-Posters/Posters'
-
+import ShaunPoster from '../../Assets/Movie-Posters/Shaun of the dead poster.jpg'
+import HotPoster from '../../Assets/Movie-Posters/Hot Fuzz poster.jpg'
+import EndPoster from '../../Assets/Movie-Posters/Worlds end poster.jpg'
+import BabyPoster from '../../Assets/Movie-Posters/Baby-Driver-Poster.jpg'
 
 function Home() {
     const[width, setWidth] = useState()
@@ -25,28 +28,35 @@ function Home() {
                     drag='x'
                     dragConstraints={{right: 0, left: -width}}
                     className="carousel__inner">
-                        {Posters.map(pic => {
-                            return(
-                                <motion.div className="carousel__poster">
-                                    <img src={pic} alt='photo taken from movie' />
-                                    <h1>title</h1>
-                                </motion.div>
-                            )
-                        })}
+                      <motion.div className='carousel__poster'>
+                        <Link to='/shaun'>
+                          <img src={ShaunPoster} />
+                          <h2 className='arousel_title'>Shaun of the Dead</h2>
+                        </Link>
+                        </motion.div>
+                      <motion.div className='carousel__poster'>
+                        <Link to='/hotfuzz'>
+                          <img src={HotPoster} />
+                          <h2 className='carousel_title'>Hot Fuzz</h2>
+                        </Link>
+                        </motion.div>
+                      <motion.div className='carousel__poster'>
+                        <Link to='/worldsend'>
+                          <img src={EndPoster} />
+                          <h2 className='arousel_title'>The Worlds End</h2>
+                        </Link>
+                        </motion.div>
+                      <motion.div className='carousel__poster'>
+                        <Link to='/worldsend'>
+                          <img src={BabyPoster} />
+                          <h2 className='arousel_title'>Baby Driver</h2>
+                        </Link>
+                        </motion.div>
                     </motion.div>
             </motion.div>
       <div className='button-div'>
         <Link to='/about'>
         <button className='button-div__btn'>About</button>
-        </Link>
-        <Link to='/shaun'>
-          <button className='button-div__btn'>Shaun of the Dead</button>
-        </Link>
-        <Link to='/hotfuzz'>
-          <button className='button-div__btn'>Hot Fuzz</button>
-        </Link>
-        <Link to='/worldsend'>
-          <button className='button-div__btn'>Worlds End</button>
         </Link>
       </div>
     </div>

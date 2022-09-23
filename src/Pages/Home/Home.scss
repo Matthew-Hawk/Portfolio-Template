@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items:center;
     width: 100%;
-    margin: 2rem 1rem;
+    margin: 0rem 1rem;
 }
 .button-div{
     display: flex;
@@ -38,20 +38,31 @@
 .carousel{
     cursor: grab;
     overflow: hidden;
-    padding: 2rem 0;
+    // padding: 3.2rem 0;
 
     &__inner{
         display: flex;
     }
     &__poster{
         min-height: 10rem;
-        // min-width: 100%;
-        padding: 1rem;
+        min-width: 40%;
+        padding: 1rem 2rem 2.8rem 2rem;
+        align-items: center
     }
     &__poster img{
         width: 100%;
-        height: 100%;
+        height: 40rem;
         border-radius: 2rem;
         object-fit: cover;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+    }
+    &__poster h2{
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
     }
 }
