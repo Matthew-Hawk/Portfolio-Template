@@ -1,15 +1,19 @@
 import './Hot-Fuzz.scss'
-import Photo from '../../Assets/Photos/Hot-Fuzz.jpg'
 import axios from 'axios'
-import {useState, useEffect} from 'react'
+import {useRef, useState, useEffect} from 'react'
+import {motion} from 'framer-motion'
+import images from '../../Assets/Hot-Fuzz/Hot-img.js'
 
 function Shaun() {
+    //state list
     const[title, setTitle] = useState()
     const[overview, setOverview] = useState()
     const[tagline, setTagline] = useState()
-
+    const[width, setWidth] = useState()
+    //variable list
+    const caroesel = useRef()
     const API = "http://localhost:8080/hotfuzz"
-
+    const trailer = "https://www.youtube.com/watch?v=ayTnvVpj9t4&ab_channel=Movieclips"
 
     useEffect(() =>{
         axios.get(API)
@@ -22,19 +26,40 @@ function Shaun() {
         })
     }, [])
 
+    useEffect(() =>{
+        console.log(caroesel.current.scrollWidth, caroesel.current.offsetWidth)
+        setWidth(caroesel.current.scrollWidth - caroesel.current.offsetWidth)
+    }, [])
 
   return (
-    <div className="home">
-        <a className='home__link' href='https://www.youtube.com/watch?v=ayTnvVpj9t4&ab_channel=Movieclips'>
-        <h1 className="home__title">{title}</h1>
+    <div className="movie">
+        <a className="movie__link" href={trailer}>
+            <h1 className="movie__title">{title}</h1>
         </a>
-        <p className="home__tagline">{tagline}</p>
-        <div className="content">
-            <img className="content__pic" src={Photo} />
-            <h2 className="content__ovT">Overview:</h2>
-            <p className="content__info">{overview}</p>
+        <p className="movie__tagline">{tagline}</p>
+        <div className="cont">
+            <motion.div 
+                ref={caroesel} 
+                whileTap={{cursor: "grabbing"}}
+                className="carousel">
+                    <motion.div
+                    drag='x'
+                    dragConstraints={{right: 0, left: -width}}
+                    className="carousel__inner">
+                        {images.map(pic => {
+                            return(
+                                <motion.div className="carousel__item">
+                                    <a href="https://www.youtube.com/watch?v=f9XZqB6pI5E&ab_channel=thecoolidge"> 
+                                    <img src={pic} alt='photo taken from movie' />
+                                    </a>
+                                </motion.div>
+                            )
+                        })}
+                    </motion.div>
+            </motion.div>
+            <h2 className="cont__ovT">Overview:</h2>
+            <p className="cont__info">{overview}</p>
         </div>
-
     </div>
   )
 }

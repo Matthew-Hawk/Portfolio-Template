@@ -13,6 +13,7 @@ function Shaun() {
 
     const carousel = useRef()
     const API = "http://localhost:8080/shaun"
+    const trailer = "https://www.youtube.com/watch?v=f9XZqB6pI5E&ab_channel=thecoolidge"
 
     
 
@@ -34,11 +35,11 @@ function Shaun() {
 
 
   return (
-    <div className="shaun">
-        <a className="shaun__link" href="https://www.youtube.com/watch?v=f9XZqB6pI5E&ab_channel=thecoolidge">
-            <h1 className="shaun__title">{title}</h1>
+    <div className="movie">
+        <a className="movie__link" href={trailer}>
+            <h1 className="movie__title">{title}</h1>
         </a>
-        <p className="shaun__tagline">{tagline}</p>
+        <p className="movie__tagline">{tagline}</p>
         <div className="cont">
             <motion.div 
             ref={carousel} 

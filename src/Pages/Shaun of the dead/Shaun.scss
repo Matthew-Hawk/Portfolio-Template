@@ -2,12 +2,12 @@
 @use '../../Styles/Partials/Mixins.scss' as *;
 @use '../../Styles/Partials/Utilities.scss' as *;
 
-.shaun{
-    margin: 2rem 0;
+.movie{
+    margin: .25rem 0;
     text-align: center;
     &__title{
         font-family: 'Montserrat';
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-style: italic;
         font-weight: 900;
         color: white;
