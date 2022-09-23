@@ -35,3 +35,23 @@
         }
     }
 }
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+    padding: 2rem 0;
+
+    &__inner{
+        display: flex;
+    }
+    &__poster{
+        min-height: 10rem;
+        // min-width: 100%;
+        padding: 1rem;
+    }
+    &__poster img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+}
