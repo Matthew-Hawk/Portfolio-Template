@@ -55,3 +55,22 @@
 
     }
 }
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+
+    &__inner{
+        display: flex;
+    }
+    &__item{
+        min-height: 20rem;
+        min-width: 100%;
+        padding: 1rem;
+    }
+    &__item img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+}
