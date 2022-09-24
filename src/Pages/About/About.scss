@@ -4,6 +4,7 @@
 
 .about{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin: 2rem 2rem  3.5rem 2rem;
     
@@ -12,13 +13,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     &__pic{
         height: 35rem;
         margin: 0rem 1rem;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
         border-radius: 10px;
+        object-fit: cover;
     }
     &__i{
+        margin-top: 1rem;
         font-family: 'Monsterrat';
         font-weight: 600;
         font-style: italic;

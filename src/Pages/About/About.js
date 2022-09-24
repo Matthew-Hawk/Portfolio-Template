@@ -6,7 +6,7 @@ function About() {
     <div className='about'>
         <div className='photo-div'>
             <img className='photo-div__pic' src={Photo} alt="Portrait of Edgar Wright"></img>
-            <p className='photo-div__i'>(Edgar Wright)</p>
+            <p className='photo-div__i'>Director | Writer | Actor</p>
         </div>
         <div className='text-div'>
             <h2 className='text-div__title'>About</h2>
