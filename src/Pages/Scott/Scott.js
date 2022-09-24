@@ -13,7 +13,7 @@ function Shaun() {
     //variable list
     const caroesel = useRef()
     const API = "http://localhost:8080/scott"
-    const trailer = "https://www.youtube.com/watch?v=D9YZw_X5UzQ"
+    const trailer = "https://www.youtube.com/watch?v=7wd5KEaOtm4"
 
     useEffect(() =>{
         axios.get(API)
