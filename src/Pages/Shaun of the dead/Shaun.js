@@ -51,10 +51,9 @@ function Shaun() {
                    className="carousel__inner">
                     {images.map(pic => {
                         return(
-                            <motion.div className="carousel__item">
-                                <a href="https://www.youtube.com/watch?v=f9XZqB6pI5E&ab_channel=thecoolidge"> 
-                                <img src={pic} alt='photo taken from movie' />
-                                </a>
+                            <motion.div
+                             className="carousel__item">
+                                <motion.img src={pic} alt='photo taken from movie' />
                             </motion.div>
                         )
                     })}

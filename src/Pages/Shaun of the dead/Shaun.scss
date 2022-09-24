@@ -19,7 +19,7 @@
         font-style: italic;
         font-weight: 900;
         font-size: 1.6rem;
-        margin: .25rem;
+        margin: .25rem 2rem;
         color: white;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
@@ -68,9 +68,11 @@
         padding: 1rem;
     }
     &__item img{
+        pointer-events: none;
         width: 100%;
         height: 100%;
         border-radius: 2rem;
         object-fit: cover;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
     }
 }

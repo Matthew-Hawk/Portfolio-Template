@@ -7,6 +7,8 @@ import ShaunPoster from '../../Assets/Movie-Posters/Shaun of the dead poster.jpg
 import HotPoster from '../../Assets/Movie-Posters/Hot Fuzz poster.jpg'
 import EndPoster from '../../Assets/Movie-Posters/Worlds end poster.jpg'
 import BabyPoster from '../../Assets/Movie-Posters/Baby-Driver-Poster.jpg'
+import ScottPoster from '../../Assets/Movie-Posters/Scott-Poster.jpg'
+import LastPoster from '../../Assets/Movie-Posters/Last-Poster.jpg'
 
 function Home() {
 
@@ -54,7 +56,19 @@ function Home() {
                           <img src={BabyPoster} />
                           <h2 className='arousel_title'>Baby Driver</h2>
                         </Link>
-                        </motion.div>
+                      </motion.div>
+                      <motion.div className='carousel__poster'>
+                        <Link to='/scott'>
+                          <img src={ScottPoster} />
+                          <h2 className='arousel_title'>Scott Pilgrim</h2>
+                        </Link>
+                      </motion.div>
+                      <motion.div className='carousel__poster'>
+                        <Link to='/last'>
+                          <img src={LastPoster} />
+                          <h2 className='arousel_title'>Last Night in Soho</h2>
+                        </Link>
+                      </motion.div>
                     </motion.div>
             </motion.div>
       <div className='button-div'>
