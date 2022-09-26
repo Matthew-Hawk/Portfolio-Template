@@ -5,12 +5,12 @@
 // Main div for Footer Sectin
 .footer{
     display: flex;
-    position: sticky;
     justify-content: center;
+    position: sticky;
     margin-top: 2rem;
 
     @include tablet {
-        margin-top: .5rem;
+        margin-top: 2.7rem;
     }
 
     @include desktop {

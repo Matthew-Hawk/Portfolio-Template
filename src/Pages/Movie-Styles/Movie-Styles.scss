@@ -2,41 +2,46 @@
 @use '../../Styles/Partials/Mixins.scss' as *;
 @use '../../Styles/Partials/Utilities.scss' as *;
 
+// Parent div for the pages
 .movie{
-    margin: .25rem 0;
+    margin: .75rem 0;
     text-align: center;
+// Movie title
     &__title{
         font-family: 'Montserrat';
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-style: italic;
         font-weight: 900;
         color: white;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+        @include tablet {
+            font-size: 2.5rem;
 
+        }
     }
+// Movie tagline, under the title
     &__tagline{
         font-family: 'Montserrat';
         font-style: italic;
         font-weight: 900;
-        font-size: 1.6rem;
+        font-size: 1rem;
         margin: .25rem 2rem;
         color: white;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
+        @include tablet {
+            font-size: 1.5rem;
+
+        }
     }
 }
-.cont{
+// Div for the overview text under the slider
+.overview{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__pic{
-        align-self: center;
-        width: 90%;
-        border-radius: 4px;
-        margin: 1rem;
-        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
-    }
-    &__ovT{
+// Overview Title
+    &__title{
         font-family: 'Montserrat';
         font-size: 2rem;
         text-align: center;
@@ -44,29 +49,34 @@
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
     }
+// Overview text brought in from the API
     &__info{
         text-align: center;
         font-family: 'Montserrat';
         font-weight: 400;
-        font-size: 2rem;
-        margin:.5rem 6rem;
+        font-size: 1.5rem;
+        margin:.25rem 2rem;
         color: white;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
     }
 }
+// Parent div for the slider
 .carousel{
     cursor: grab;
     overflow: hidden;
 
+// parent div for the array of images
     &__inner{
         display: flex;
     }
+// container for the image in the slider
     &__item{
         min-height: 20rem;
         min-width: 100%;
         padding: 1rem;
     }
+// styles for the images in the slider, i know that is a better way to style, just wanted to showcase that I knew how
     &__item img{
         pointer-events: none;
         width: 100%;

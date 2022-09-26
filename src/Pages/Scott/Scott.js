@@ -1,4 +1,4 @@
-// import './Hot-Fuzz.scss'
+import "../Movie-Styles/Movie-Styles.scss"
 import axios from 'axios'
 import {useRef, useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
@@ -37,7 +37,7 @@ function Shaun() {
             <h1 className="movie__title">{title}</h1>
         </a>
         <p className="movie__tagline">{tagline}</p>
-        <div className="cont">
+        <div className="overview">
             <motion.div ref={caroesel} whileTap={{cursor: "grabbing"}} className="carousel">
                     <motion.div drag='x' dragConstraints={{right: 0, left: -width}} className="carousel__inner">
                         {Photos.map(pic => {
@@ -49,8 +49,8 @@ function Shaun() {
                         })}
                     </motion.div>
             </motion.div>
-            <h2 className="cont__ovT">Overview:</h2>
-            <p className="cont__info">{overview}</p>
+            <h2 className="overview__title">Overview:</h2>
+            <p className="overview__info">{overview}</p>
         </div>
     </div>
   )
