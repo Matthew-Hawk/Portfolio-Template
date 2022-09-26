@@ -6,10 +6,17 @@
     display: flex;
     position: sticky;
     justify-content: center;
+    margin-top: 2rem;
+
+    @include desktop {
+        margin-top: 5rem;
+    }
     &__logo{
         height: 3rem;
         margin: 1rem;
         filter: brightness(0) invert(1);
-        
+    }
+    &__api{
+        width: 6rem;
     }
 }
