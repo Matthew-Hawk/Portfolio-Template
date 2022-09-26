@@ -31,28 +31,32 @@
     }
 }
 
-// Carousel that holds the movie posters
+// Parent Carousel that holds the sliders
 .carousel{
     cursor: grab;
     overflow: hidden;
-    margin-bottom: 2rem;
+// Carousel that holds the movie posters
     &__inner{
         display: flex;
     }
+// individual container for the poster/img/and link to corosponding page
     &__poster{
-        min-width: 11.7rem;
+        min-width: 19rem;
         height: 100%;
         padding: 1rem 0;
         margin: 0 1rem;
     }
+// there are more effeciant ways to do this I just wanted to showcase that I knew how to do it this way
+// styles for the image and link in the poster div
     &__poster img,link{
-        width: 11.7rem;
+        width: 19rem;
         height: 100%;
         object-fit: cover;
         border-radius: 2rem;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
     }
+// styles for the h2 and p tags in the poster div
     &__poster h2,p{
         font-family: 'Montserrat';
         font-weight: 900;
