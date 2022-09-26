@@ -2,6 +2,7 @@
 @use '../../Styles/Partials//Mixins.scss' as *;
 @use '../../Styles/Partials/Utilities.scss' as *;
 
+// Main div for Footer Sectin
 .footer{
     display: flex;
     position: sticky;
@@ -13,13 +14,19 @@
     }
 
     @include desktop {
-        margin-top: 5rem;
+        margin-top: 0rem;
     }
+// Logo for Linkedin/Github
     &__logo{
         height: 3rem;
         margin: 1rem;
         filter: brightness(0) invert(1);
+
+        @include desktop {
+            margin: 0 1rem;
+        }
     }
+// TMDB Contribution logo
     &__api{
         width: 6rem;
     }
