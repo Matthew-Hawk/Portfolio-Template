@@ -1,0 +1,68 @@
+@use "../../Styles/Global.scss" as *;
+@use "../../Styles/Partials/Utilities.scss" as *;
+@use "../../Styles/Partials/Mixins.scss" as *;
+
+// Main divs that holds evreything
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+// This is the about button
+.button-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    
+    &__btn{
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 4rem;
+        padding: .5rem;
+        border: none; 
+        background-color: transparent;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+    }
+}
+
+// Parent Carousel that holds the sliders
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+// Carousel that holds the movie posters
+    &__inn{
+        display: flex;
+    }
+// individual container for the poster/img/and link to corosponding page
+    &__poster{
+        min-width: 19rem;
+        height: 100%;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+// there are more effeciant ways to do this I just wanted to showcase that I knew how to do it this way
+// styles for the image and link in the poster div
+    &__poster img,link{
+        width: 19rem;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+    }
+// styles for the h2 and p tags in the poster div
+    &__poster h2,p{
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+    }
+}

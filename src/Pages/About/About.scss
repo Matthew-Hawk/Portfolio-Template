@@ -1,0 +1,60 @@
+@use '../../Styles/Global.scss' as *;
+@use '../../Styles//Partials/Mixins.scss' as *;
+@use '../../Styles/Partials/Utilities.scss' as *;
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem 2rem  3.5rem 2rem;
+    
+}
+.photo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    &__pic{
+        height: 35rem;
+        margin: 0rem 1rem;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    &__i{
+        margin-top: 1rem;
+        font-family: 'Monsterrat';
+        font-weight: 600;
+        font-style: italic;
+        font-size: 1.8rem;
+        text-align: center;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+    }
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    &__title{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 5rem;
+        color: white;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+
+    }
+    &__info{
+        font-family: 'Monsterrat';
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: white;
+        border-radius: 20px;
+        background-color: rgba($color: #0e0e0e, $alpha: .2);
+        padding: 1rem;
+    }
+}
