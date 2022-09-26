@@ -36,7 +36,7 @@ function Home() {
                     <motion.div
                     drag='x'
                     dragConstraints={{right: 0, left: -width}}
-                    className="carousel__inner">
+                    className="carousel__inn">
                       {/* Shaun Poster */}
                       <motion.div className='carousel__poster'>
                         <Link  to='/shaun'>

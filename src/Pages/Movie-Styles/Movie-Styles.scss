@@ -18,6 +18,9 @@
             font-size: 2.5rem;
 
         }
+        @include desktop {
+            font-size: 3.3rem;
+        }
     }
 // Movie tagline, under the title
     &__tagline{
@@ -32,6 +35,42 @@
         @include tablet {
             font-size: 1.5rem;
 
+        }
+    }
+}
+// Parent div for the slider
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+
+// parent div for the array of images
+    &__inner{
+        display: flex;
+        @include desktop{
+            margin-left: 13rem;
+        }
+    }
+// container for the image in the slider
+    &__item{
+        // min-height: 15rem;
+        min-width: 100%;
+        padding: 1rem;
+
+        @include desktop {
+            min-width: 60rem;
+        }
+    }
+// styles for the images in the slider, i know that is a better way to style, just wanted to showcase that I knew how
+    &__item img{
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
+
+        &__item img ::hover{
+            color: rgba($color: #000000, $alpha: .5);
         }
     }
 }
@@ -59,30 +98,5 @@
         color: white;
         filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
 
-    }
-}
-// Parent div for the slider
-.carousel{
-    cursor: grab;
-    overflow: hidden;
-
-// parent div for the array of images
-    &__inner{
-        display: flex;
-    }
-// container for the image in the slider
-    &__item{
-        min-height: 20rem;
-        min-width: 100%;
-        padding: 1rem;
-    }
-// styles for the images in the slider, i know that is a better way to style, just wanted to showcase that I knew how
-    &__item img{
-        pointer-events: none;
-        width: 100%;
-        height: 100%;
-        border-radius: 2rem;
-        object-fit: cover;
-        filter: drop-shadow(5px 4px .4rem rgba(22, 22, 22, .8));
     }
 }

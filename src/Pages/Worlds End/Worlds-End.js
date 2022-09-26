@@ -58,7 +58,7 @@ function Shaun() {
                         })}
                     </motion.div>
             </motion.div>
-            <h2 className="overview">Overview:</h2>
+            <h2 className="overview__title">Overview:</h2>
             <p className="overview__info">{overview}</p>
         </div>
     </div>
