@@ -8,6 +8,10 @@
     justify-content: center;
     margin-top: 2rem;
 
+    @include tablet {
+        margin-top: .5rem;
+    }
+
     @include desktop {
         margin-top: 5rem;
     }
