@@ -9,7 +9,7 @@
 
 ## SnapShots (Mobile View) ```375x800``` Home | Movie | About
 <p align="center">
-<img height="600"  src="https://user-images.githubusercontent.com/59518928/192400311-fddc5112-879f-4cad-adf6-8c93469adcb2.png"> <img height="600" src="https://user-images.githubusercontent.com/59518928/192400323-dd4206ce-221f-4b18-9511-0c00e138a4aa.png"> <img height="600" src="https://user-images.githubusercontent.com/59518928/192400335-42f66b30-7818-43db-b389-eef9ccf3d535.png">
+<img height="6500"  src="https://user-images.githubusercontent.com/59518928/192400311-fddc5112-879f-4cad-adf6-8c93469adcb2.png"> <img height="500" src="https://user-images.githubusercontent.com/59518928/192400323-dd4206ce-221f-4b18-9511-0c00e138a4aa.png"> <img height="500" src="https://user-images.githubusercontent.com/59518928/192400335-42f66b30-7818-43db-b389-eef9ccf3d535.png">
 </p>
 
 ## Features
