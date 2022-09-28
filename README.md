@@ -29,15 +29,15 @@
 :man_dancing: Using Motion can be deceptivly complex but very rewarding <br>
 :pray: Youtube tuts can be a life saver <br>
 :muscle: Backend functionality is not scary <br>
-:partying_face: trust and enjoy the process :partying_face: 
+:partying_face: Trust and enjoy the process :partying_face: 
 
-## Instilation | [Back-end](https://github.com/Ados4453/Flick-Finder_API)
+## Installation | [Back-end](https://github.com/Ados4453/Flick-Finder_API)
 - Make sure you have a current instilation of [Node.js](https://nodejs.org/en/) 
 - Clone the backend repo from your terminal using ```$ git clone https://github.com/Ados4453/Flick-Finder_API.git```
 - You wont need to run ```npm install``` as the repo currently has the Node_Moduels
 - To start the backend server in the turminal run ```npm start```
 
-## Instilation | [Front-end](https://github.com/Ados4453/Flick-Finder) 
+## Installation | [Front-end](https://github.com/Ados4453/Flick-Finder) 
 - Clone the Front-end repo from your terminal using ```$ git clone https://github.com/Ados4453/Flick-Finder.git```
 - You will need to then run ```npm install``` to download all the node moduals
 - After that your Front end should be all set up, to run the server run ```npm start``` locally from your terminal
