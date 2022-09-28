@@ -41,4 +41,4 @@
 - Clone the Front-end repo from your terminal using ```$ git clone https://github.com/Ados4453/Flick-Finder.git```
 - You will need to then run ```npm install``` to download all the node moduals
 - After that your Front end should be all set up, to run the server run ```npm start``` locally from your terminal
-- the portfolio will then be avaliable to be seen at ```http://localhost3000```
+- The portfolio will then be avaliable to be seen at ```http://localhost3000```
